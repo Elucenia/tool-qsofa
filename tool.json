@@ -1,0 +1,211 @@
+{
+  "tool": {
+    "id": "qsofa",
+    "title": "qSOFA (quick SOFA)",
+    "short": "Rastreio de gravidade na suspeita de sepse",
+    "desc": "Calcule o qSOFA (quick SOFA) em pacientes com suspeita de infecção fora da UTI: frequência respiratória, estado mental e pressão sistólica.",
+    "lead": "Identifica, fora da UTI, pacientes com suspeita de infecção que têm maior risco de morte ou de internação prolongada em terapia intensiva.",
+    "spec": [
+      "medicina-de-emergencia",
+      "medicina-intensiva",
+      "infectologia",
+      "clinica-medica"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "fr",
+        "Frequência respiratória ≥ 22 irpm",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "mental",
+        "Alteração do estado mental (Glasgow &lt; 15)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "pas",
+        "Pressão sistólica ≤ 100 mmHg",
+        "chk",
+        {
+          "pts": 1
+        }
+      ]
+    ],
+    "score": {
+      "label": "qSOFA",
+      "unit": "de 3",
+      "bands": [
+        [
+          0,
+          "low",
+          "qSOFA negativo (&lt; 2)",
+          "Não exclui sepse: continue reavaliando e calcule o SOFA se houver suspeita de disfunção orgânica."
+        ],
+        [
+          2,
+          "high",
+          "qSOFA positivo (≥ 2): maior risco de mortalidade hospitalar",
+          "Investigar disfunção orgânica (SOFA), iniciar o pacote de sepse e considerar UTI."
+        ]
+      ]
+    },
+    "formula": "<p>Um ponto para cada: frequência respiratória ≥ 22/min, alteração do estado mental e pressão sistólica ≤ 100 mmHg. Positivo com 2 ou mais pontos.</p>",
+    "table": [
+      [
+        "qSOFA",
+        "Interpretação (Sepsis-3)"
+      ],
+      [
+        "0 a 1",
+        "Risco menor; não exclui sepse"
+      ],
+      [
+        "2 a 3",
+        "Risco 3 a 14 vezes maior de mortalidade hospitalar em pacientes com infecção fora da UTI"
+      ]
+    ],
+    "tips": [
+      "O qSOFA <strong>não é critério diagnóstico de sepse</strong>: a definição Sepsis-3 usa aumento de ≥ 2 pontos no SOFA.",
+      "A Surviving Sepsis Campaign 2021 recomenda <strong>não</strong> usar o qSOFA isoladamente como ferramenta de triagem, pela baixa sensibilidade; prefira combiná-lo com SIRS, NEWS2 ou lactato.",
+      "Foi validado para prognóstico fora da UTI; dentro da UTI, o SOFA discrimina melhor.",
+      "Um qSOFA negativo em paciente com aspecto grave, hiperlactatemia ou hipotensão responsiva a volume não deve atrasar antibiótico e reanimação."
+    ],
+    "sources": [
+      [
+        "Seymour CW et al. Assessment of clinical criteria for sepsis: for the Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3). JAMA, 2016.",
+        "https://doi.org/10.1001/jama.2016.0288"
+      ],
+      [
+        "Singer M et al. The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3). JAMA, 2016.",
+        "https://doi.org/10.1001/jama.2016.0287"
+      ],
+      [
+        "Evans L et al. Surviving sepsis campaign: international guidelines for management of sepsis and septic shock 2021. Intensive Care Med, 2021.",
+        "https://doi.org/10.1007/s00134-021-06506-y"
+      ]
+    ],
+    "cases": [
+      [
+        "Só taquipneia: 1 ponto, negativo",
+        {
+          "fr": true
+        },
+        {
+          "score": 1,
+          "level": "low"
+        }
+      ],
+      [
+        "Taquipneia e hipotensão: 2 pontos, positivo (limite)",
+        {
+          "fr": true,
+          "pas": true
+        },
+        {
+          "score": 2,
+          "level": "high"
+        }
+      ],
+      [
+        "Os três critérios: 3 pontos",
+        {
+          "fr": true,
+          "mental": true,
+          "pas": true
+        },
+        {
+          "score": 3,
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "urgencia",
+    "kind": "Escore",
+    "config": {
+      "unit": "de 3",
+      "label": "qSOFA",
+      "fields": [
+        [
+          "fr",
+          "chk",
+          1
+        ],
+        [
+          "mental",
+          "chk",
+          1
+        ],
+        [
+          "pas",
+          "chk",
+          1
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "low",
+          "qSOFA negativo (&lt; 2)",
+          "Não exclui sepse: continue reavaliando e calcule o SOFA se houver suspeita de disfunção orgânica."
+        ],
+        [
+          2,
+          "high",
+          "qSOFA positivo (≥ 2): maior risco de mortalidade hospitalar",
+          "Investigar disfunção orgânica (SOFA), iniciar o pacote de sepse e considerar UTI."
+        ]
+      ]
+    },
+    "areaId": "urgencia",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/urgencia.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "id": "qsofa",
+    "status": "needs-review",
+    "reason": "O ZIP usa 'rastreio' e condutas disparadas por pontos. SSC 2026 prefere NEWS/NEWS2/MEWS/SIRS ao qSOFA como ferramenta isolada de triagem. Exibir somente a pontuação prognóstica, a população e a fonte; não usar como diagnóstico, exclusão de sepse ou disparo autônomo de tratamento.",
+    "sourceUrl": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+    "sourceTitle": "Surviving Sepsis Campaign — International Guidelines 2026",
+    "sourceDate": "2026",
+    "publisherRegion": "Internacional / SCCM–ESICM",
+    "checkedAt": "2026-09-25",
+    "clinicalValidation": "not-performed",
+    "formulaOverride": "qSOFA = 1 ponto por FR ≥22/min, alteração do estado mental e PAS ≤100 mmHg. Escore de prognóstico; não é ferramenta isolada para confirmar ou excluir sepse.",
+    "replacementReadings": [
+      {
+        "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
+        "title": "Surviving Sepsis Campaign — International Guidelines 2026",
+        "date": "2026",
+        "region": "Internacional / SCCM–ESICM"
+      }
+    ]
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/urgencia.php",
+    "sha256": "b24f3a77383430c3f3463168e78e88341034b3108bd712f3613ae32672dc281c",
+    "bytes": 121059
+  },
+  "clinicalValidation": "not-performed"
+}

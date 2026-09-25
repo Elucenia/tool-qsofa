@@ -1,0 +1,50 @@
+[
+  {
+    "label": "Só taquipneia: 1 ponto, negativo",
+    "input": {
+      "fr": true
+    },
+    "expected": {
+      "score": 1,
+      "level": "low"
+    },
+    "originalInput": {
+      "fr": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Taquipneia e hipotensão: 2 pontos, positivo (limite)",
+    "input": {
+      "fr": true,
+      "pas": true
+    },
+    "expected": {
+      "score": 2,
+      "level": "high"
+    },
+    "originalInput": {
+      "fr": true,
+      "pas": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Os três critérios: 3 pontos",
+    "input": {
+      "fr": true,
+      "mental": true,
+      "pas": true
+    },
+    "expected": {
+      "score": 3,
+      "level": "high"
+    },
+    "originalInput": {
+      "fr": true,
+      "mental": true,
+      "pas": true
+    },
+    "expandedZeroOptions": []
+  }
+]
