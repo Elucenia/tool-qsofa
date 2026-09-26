@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-qsofa",
   "version": "0.1.0",
-  "description": "qSOFA (quick SOFA) · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "qSOFA (quick SOFA) · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
