@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-qsofa · Elucenia · https://github.com/Elucenia/tool-qsofa
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"qsofa","title":"qSOFA (quick SOFA)","fields":[["fr","Frequência respiratória ≥ 22 irpm","chk",{"pts":1}],["mental","Alteração do estado mental (Glasgow &lt; 15)","chk",{"pts":1}],["pas","Pressão sistólica ≤ 100 mmHg","chk",{"pts":1}]],"config":{"unit":"de 3","label":"qSOFA","fields":[["fr","chk",1],["mental","chk",1],["pas","chk",1]],"bands":[[0,"low","qSOFA negativo (&lt; 2)","Não exclui sepse: continue reavaliando e calcule o SOFA se houver suspeita de disfunção orgânica."],[2,"high","qSOFA positivo (≥ 2): maior risco de mortalidade hospitalar","Investigar disfunção orgânica (SOFA), iniciar o pacote de sepse e considerar UTI."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
