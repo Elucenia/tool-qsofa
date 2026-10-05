@@ -256,7 +256,25 @@
   "sourceNodeBrowserVmParity": true,
   "actualBrowserDomVerified": false,
   "newIndependentOracle": false,
-  "currentActualR6HttpEvidence": "pending",
+  "currentActualR6HttpEvidence": {
+    "path": "evidence/served-http-r6.json",
+    "bytes": 18998,
+    "sha256": "036a1bc6d5a68cca4e4bfef01b7ef5f9977df33be66b9571dd2567d6211c4606",
+    "sourceReceipt": {
+      "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+      "bytes": 7105396,
+      "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+    },
+    "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+    "sourceCalculator": {
+      "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/qsofa/calculator.js",
+      "sha256": "70fa4643bb7d0b85321dd133c4943873b928f0bfbf5b3095f7e849d59b62245b",
+      "bytes": 4634
+    },
+    "cases": 3,
+    "status": "passed"
+  },
   "clinicalApproval": false,
-  "professionalLanguageApproval": false
+  "professionalLanguageApproval": false,
+  "frozenSourceCurrentAdapterMatch": true
 }
