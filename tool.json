@@ -5,78 +5,34 @@
     "short": "Rastreio de gravidade na suspeita de sepse",
     "desc": "Calcule o qSOFA (quick SOFA) em pacientes com suspeita de infecção fora da UTI: frequência respiratória, estado mental e pressão sistólica.",
     "lead": "Identifica, fora da UTI, pacientes com suspeita de infecção que têm maior risco de morte ou de internação prolongada em terapia intensiva.",
+    "kind": "Escore",
     "spec": [
       "medicina-de-emergencia",
       "medicina-intensiva",
       "infectologia",
       "clinica-medica"
     ],
-    "tier": 1,
     "fields": [
       [
         "fr",
         "Frequência respiratória ≥ 22 irpm",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "mental",
         "Alteração do estado mental (Glasgow &lt; 15)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "pas",
         "Pressão sistólica ≤ 100 mmHg",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ]
     ],
-    "score": {
-      "label": "qSOFA",
-      "unit": "de 3",
-      "bands": [
-        [
-          0,
-          "low",
-          "qSOFA negativo (&lt; 2)",
-          "Não exclui sepse: continue reavaliando e calcule o SOFA se houver suspeita de disfunção orgânica."
-        ],
-        [
-          2,
-          "high",
-          "qSOFA positivo (≥ 2): maior risco de mortalidade hospitalar",
-          "Investigar disfunção orgânica (SOFA), iniciar o pacote de sepse e considerar UTI."
-        ]
-      ]
-    },
     "formula": "<p>Um ponto para cada: frequência respiratória ≥ 22/min, alteração do estado mental e pressão sistólica ≤ 100 mmHg. Positivo com 2 ou mais pontos.</p>",
-    "table": [
-      [
-        "qSOFA",
-        "Interpretação (Sepsis-3)"
-      ],
-      [
-        "0 a 1",
-        "Risco menor; não exclui sepse"
-      ],
-      [
-        "2 a 3",
-        "Risco 3 a 14 vezes maior de mortalidade hospitalar em pacientes com infecção fora da UTI"
-      ]
-    ],
-    "tips": [
-      "O qSOFA <strong>não é critério diagnóstico de sepse</strong>: a definição Sepsis-3 usa aumento de ≥ 2 pontos no SOFA.",
-      "A Surviving Sepsis Campaign 2021 recomenda <strong>não</strong> usar o qSOFA isoladamente como ferramenta de triagem, pela baixa sensibilidade; prefira combiná-lo com SIRS, NEWS2 ou lactato.",
-      "Foi validado para prognóstico fora da UTI; dentro da UTI, o SOFA discrimina melhor.",
-      "Um qSOFA negativo em paciente com aspecto grave, hiperlactatemia ou hipotensão responsiva a volume não deve atrasar antibiótico e reanimação."
-    ],
     "sources": [
       [
         "Seymour CW et al. Assessment of clinical criteria for sepsis: for the Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3). JAMA, 2016.",
@@ -89,6 +45,14 @@
       [
         "Evans L et al. Surviving sepsis campaign: international guidelines for management of sepsis and septic shock 2021. Intensive Care Med, 2021.",
         "https://doi.org/10.1007/s00134-021-06506-y"
+      ],
+      [
+        "SSC adult guidelines2021",
+        "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-guidelines-2021"
+      ],
+      [
+        "SSC adult guidelines2026, current official page as observed2026-10-03",
+        "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines"
       ]
     ],
     "cases": [
@@ -126,43 +90,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 3",
-      "label": "qSOFA",
-      "fields": [
-        [
-          "fr",
-          "chk",
-          1
-        ],
-        [
-          "mental",
-          "chk",
-          1
-        ],
-        [
-          "pas",
-          "chk",
-          1
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "qSOFA negativo (&lt; 2)",
-          "Não exclui sepse: continue reavaliando e calcule o SOFA se houver suspeita de disfunção orgânica."
-        ],
-        [
-          2,
-          "high",
-          "qSOFA positivo (≥ 2): maior risco de mortalidade hospitalar",
-          "Investigar disfunção orgânica (SOFA), iniciar o pacote de sepse e considerar UTI."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -171,32 +98,183 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-03T18:32:58.690Z",
+      "total": 8,
+      "passed": 8,
+      "evidencePath": "reports/review-20261003/native-score-source-oracles.json",
+      "scope": "Three binary criteria, one point each; all eight combinations. This implementation records altered mentation (GCS <15), not the derivation table GCS ≤13. Diagnostic screening performance is not tested.",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "q SOFA/Sepsis 3/Seymour 2016:FR≥22/PAS≤100/alteração mental,0–3; sem recomendação rastreioisolado SSC 2021",
+    "implementationVersion": "qsofa@native-2026-10-03+70fa4643bb7d",
+    "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5433435/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Um ponto para cada: frequência respiratória ≥ 22/min, alteração do estado mental e pressão sistólica ≤ 100 mmHg. Positivo com 2 ou mais pontos.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "fr",
+            "label": "Frequência respiratória ≥ 22 irpm",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "mental",
+            "label": "Alteração do estado mental (Glasgow &lt; 15)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "pas",
+            "label": "Pressão sistólica ≤ 100 mmHg",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "790b082b671f487f97c1fa7cbba6858fd2ec4dd7d7fcc2152cb90e8d083b11d0"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Seymour CW et al. Assessment of clinical criteria for sepsis: for the Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3). JAMA, 2016.",
+          "url": "https://doi.org/10.1001/jama.2016.0288",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Assessment of Clinical Criteria for Sepsis: For the Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3).",
+            "year": "2016",
+            "firstPublicationDate": "2016-02-01",
+            "doi": "10.1001/jama.2016.0288",
+            "pmid": "26903335",
+            "pmcid": "PMC5433435",
+            "journal": "JAMA",
+            "authors": "Seymour CW, Liu VX, Iwashyna TJ, Brunkhorst FM, Rea TD, Scherag A, Rubenfeld G, Kahn JM, Shankar-Hari M, Singer M, Deutschman CS, Escobar GJ, Angus DC."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5433435/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "b121911a0d6019b4bdc9987e6ddf978179d7e6f589a40defda8244fe8dc09651",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Singer M et al. The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3). JAMA, 2016.",
+          "url": "https://doi.org/10.1001/jama.2016.0287",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3).",
+            "year": "2016",
+            "firstPublicationDate": "2016-02-01",
+            "doi": "10.1001/jama.2016.0287",
+            "pmid": "26903338",
+            "pmcid": "PMC4968574",
+            "journal": "JAMA",
+            "authors": "Singer M, Deutschman CS, Seymour CW, Shankar-Hari M, Annane D, Bauer M, Bellomo R, Bernard GR, Chiche JD, Coopersmith CM, Hotchkiss RS, Levy MM, Marshall JC, Martin GS, Opal SM, Rubenfeld GD, van der Poll T, Vincent JL, Angus DC."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4968574/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "c1cb0f98b355482761c0dbe96dda0c31ac720b0b065a7ef55cd5888355f7aee7",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Evans L et al. Surviving sepsis campaign: international guidelines for management of sepsis and septic shock 2021. Intensive Care Med, 2021.",
+          "url": "https://doi.org/10.1007/s00134-021-06506-y",
+          "class": "primary-publication-full-text-retrieved",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": true,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Surviving sepsis campaign: international guidelines for management of sepsis and septic shock 2021.",
+            "year": "2021",
+            "firstPublicationDate": "2021-10-02",
+            "doi": "10.1007/s00134-021-06506-y",
+            "pmid": "34599691",
+            "pmcid": "PMC8486643",
+            "journal": "Intensive care medicine",
+            "authors": "Evans L, Rhodes A, Alhazzani W, Antonelli M, Coopersmith CM, French C, Machado FR, Mcintyre L, Ostermann M, Prescott HC, Schorr C, Simpson S, Wiersinga WJ, Alshamsi F, Angus DC, Arabi Y, Azevedo L, Beale R, Beilman G, Belley-Cote E, Burry L, Cecconi M, Centofanti J, Coz Yataco A, De Waele J, Dellinger RP, Doi K, Du B, Estenssoro E, Ferrer R, Gomersall C, Hodgson C, Møller MH, Iwashyna T, Jacob S, Kleinpell R, Klompas M, Koh Y, Kumar A, Kwizera A, Lobo S, Masur H, McGloughlin S, Mehta S, Mehta Y, Mer M, Nunnally M, Oczkowski S, Osborn T, Papathanassoglou E, Perner A, Puskarich M, Roberts J, Schweickert W, Seckel M, Sevransky J, Sprung CL, Welte T, Zimmerman J, Levy M."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8486643/",
+          "abstractAvailable": false,
+          "fullTextSha256": "d2be2ebc4667315e15db145476d6a3f6ece077ea0c738f858b134633b78065f6",
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-03T18:32:58.690Z",
+        "total": 8,
+        "passed": 8,
+        "evidencePath": "reports/review-20261003/native-score-source-oracles.json",
+        "scope": "Three binary criteria, one point each; all eight combinations. This implementation records altered mentation (GCS <15), not the derivation table GCS ≤13. Diagnostic screening performance is not tested."
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "70fa4643bb7d0b85321dd133c4943873b928f0bfbf5b3095f7e849d59b62245b"
+    },
+    "limits": "qSOFA2016 é um instrumento de risco em adultos com suspeita de infecção, não um diagnóstico nem um teste isolado para excluir sepse. Pontuação baixa não elimina suspeita clínica. A SSC2021 recomenda contra qSOFA como único instrumento de rastreamento; a orientação oficial SSC2026 mantém preferência por outros instrumentos de rastreamento hospitalar. A avaliação e o tratamento de emergência não devem aguardar o escore. Este limiar adulto não estabelece aplicação pediátrica.",
+    "limitsEvidence": {
+      "status": "primary-source-documentation-checked",
+      "sources": [
+        {
+          "url": "https://doi.org/10.1001/jama.2016.0288",
+          "edition": "Seymour et al. Sepsis-3/qSOFA2016",
+          "access": "Original variant/criteria are already catalogued. This next-batch pass did not re-read the complete original cohort paper."
+        },
+        {
+          "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-guidelines-2021",
+          "edition": "SSC adult guidelines2021",
+          "access": "Official SCCM page directly read: screening recommendation, adults, clinical emergency context."
+        },
+        {
+          "url": "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines",
+          "edition": "SSC adult guidelines2026, current official page as observed2026-10-03",
+          "access": "Official SCCM page directly read: adult scope, screening recommendations, sepsis as clinical diagnosis. This is current context, not an automatic replacement of qSOFA2016 algorithm."
+        }
+      ],
+      "checkedScope": "Only specific retrieved official sections listed per method. Failed original publisher requests explicitly separated from successful institutional primary-article copies or official guideline pages. No new website edits or clinical approval.",
+      "confirmedLimits": [
+        "qSOFA remains an adult risk-assessment tool in suspected infection, not a stand-alone diagnosis or rule-out test.",
+        "SSC2021 recommends against using qSOFA alone for sepsis screening compared with SIRS/NEWS/MEWS.",
+        "Current official SSC2026 guidance similarly favors NEWS/NEWS2/MEWS/SIRS over qSOFA alone for hospital screening.",
+        "A0–1 score must not delay assessment/resuscitation for suspected sepsis. Adult guideline evidence does not establish a pediatric threshold."
+      ],
+      "sourceReviewReport": "reports/review-20261003/native-population-limits-next-five-review.json",
+      "sourceReviewSha256": "2259ae5d265f007502a7e7abb5ea74579c9fd733fee2049a77d71fd93f6898cc",
+      "accessLimit": "Only the sections identified in each source access record were checked. Unretrieved publisher originals remain explicitly unretrieved; this is not a full source or population validation approval.",
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "arithmeticChanged": false
     }
   },
-  "review": {
-    "id": "qsofa",
-    "status": "needs-review",
-    "reason": "O ZIP usa 'rastreio' e condutas disparadas por pontos. SSC 2026 prefere NEWS/NEWS2/MEWS/SIRS ao qSOFA como ferramenta isolada de triagem. Exibir somente a pontuação prognóstica, a população e a fonte; não usar como diagnóstico, exclusão de sepse ou disparo autônomo de tratamento.",
-    "sourceUrl": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
-    "sourceTitle": "Surviving Sepsis Campaign — International Guidelines 2026",
-    "sourceDate": "2026",
-    "publisherRegion": "Internacional / SCCM–ESICM",
-    "checkedAt": "2026-09-25",
-    "clinicalValidation": "not-performed",
-    "formulaOverride": "qSOFA = 1 ponto por FR ≥22/min, alteração do estado mental e PAS ≤100 mmHg. Escore de prognóstico; não é ferramenta isolada para confirmar ou excluir sepse.",
-    "replacementReadings": [
-      {
-        "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026",
-        "title": "Surviving Sepsis Campaign — International Guidelines 2026",
-        "date": "2026",
-        "region": "Internacional / SCCM–ESICM"
-      }
-    ]
+  "currentSource": {
+    "file": "apps/website/private/tool-code/qsofa/calculator.js",
+    "bytes": 4634,
+    "sha256": "70fa4643bb7d0b85321dd133c4943873b928f0bfbf5b3095f7e849d59b62245b"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "15c87bbb72ff8f845b2062a496229960f8f9c906aaf647ed236434448153073b",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 8,
+      "sha256": "0b81a514a79ea92a75bd7f69e09f61d9447313fd8e07d400bcbe03e74daf1bbd",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
