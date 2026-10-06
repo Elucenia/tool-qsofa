@@ -1,0 +1,169 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "qsofa",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "18f4465d4580998969ea8efcbd4dec55046074c2",
+    "oldEngineSha256": "70fa4643bb7d0b85321dd133c4943873b928f0bfbf5b3095f7e849d59b62245b",
+    "currentEngineSha256": "7912002a21dcac06a21edffc6902124ca715891daa8bb0a880a242a23995d570"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Só taquipneia: 1 ponto, negativo",
+      "input": {
+        "fr": true,
+        "mental": false,
+        "pas": false
+      },
+      "publicOutput": {
+        "id": "qsofa",
+        "main": [
+          "1",
+          "de 3"
+        ],
+        "label": "qSOFA",
+        "raw": {
+          "score": 1
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 1,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1",
+          "de 3"
+        ],
+        "label": "qSOFA",
+        "level": "low",
+        "verdict": "qSOFA negativo (&lt; 2)",
+        "note": "Não exclui sepse: continue reavaliando e calcule o SOFA se houver suspeita de disfunção orgânica.",
+        "raw": {
+          "score": 1
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Taquipneia e hipotensão: 2 pontos, positivo (limite)",
+      "input": {
+        "fr": true,
+        "pas": true,
+        "mental": false
+      },
+      "publicOutput": {
+        "id": "qsofa",
+        "main": [
+          "2",
+          "de 3"
+        ],
+        "label": "qSOFA",
+        "raw": {
+          "score": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 2,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2",
+          "de 3"
+        ],
+        "label": "qSOFA",
+        "level": "high",
+        "verdict": "qSOFA positivo (≥ 2): maior risco de mortalidade hospitalar",
+        "note": "Investigar disfunção orgânica (SOFA), iniciar o pacote de sepse e considerar UTI.",
+        "raw": {
+          "score": 2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Os três critérios: 3 pontos",
+      "input": {
+        "fr": true,
+        "mental": true,
+        "pas": true
+      },
+      "publicOutput": {
+        "id": "qsofa",
+        "main": [
+          "3",
+          "de 3"
+        ],
+        "label": "qSOFA",
+        "raw": {
+          "score": 3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 3,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "3",
+          "de 3"
+        ],
+        "label": "qSOFA",
+        "level": "high",
+        "verdict": "qSOFA positivo (≥ 2): maior risco de mortalidade hospitalar",
+        "note": "Investigar disfunção orgânica (SOFA), iniciar o pacote de sepse e considerar UTI.",
+        "raw": {
+          "score": 3
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

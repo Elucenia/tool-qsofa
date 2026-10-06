@@ -107,7 +107,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "q SOFA/Sepsis 3/Seymour 2016:FR≥22/PAS≤100/alteração mental,0–3; sem recomendação rastreioisolado SSC 2021",
-    "implementationVersion": "qsofa@native-2026-10-03+70fa4643bb7d",
+    "implementationVersion": "qsofa@native-2026-10-05+7912002a21dc",
     "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5433435/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -224,7 +224,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "70fa4643bb7d0b85321dd133c4943873b928f0bfbf5b3095f7e849d59b62245b"
+      "implementationHash": "7912002a21dcac06a21edffc6902124ca715891daa8bb0a880a242a23995d570",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "qsofa@native-2026-10-03+70fa4643bb7d",
+          "previousImplementationHash": "70fa4643bb7d0b85321dd133c4943873b928f0bfbf5b3095f7e849d59b62245b",
+          "implementationHash": "7912002a21dcac06a21edffc6902124ca715891daa8bb0a880a242a23995d570",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "790b082b671f487f97c1fa7cbba6858fd2ec4dd7d7fcc2152cb90e8d083b11d0",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "qSOFA2016 é um instrumento de risco em adultos com suspeita de infecção, não um diagnóstico nem um teste isolado para excluir sepse. Pontuação baixa não elimina suspeita clínica. A SSC2021 recomenda contra qSOFA como único instrumento de rastreamento; a orientação oficial SSC2026 mantém preferência por outros instrumentos de rastreamento hospitalar. A avaliação e o tratamento de emergência não devem aguardar o escore. Este limiar adulto não estabelece aplicação pediátrica.",
     "limitsEvidence": {
@@ -263,15 +291,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/qsofa/calculator.js",
-    "bytes": 4634,
-    "sha256": "70fa4643bb7d0b85321dd133c4943873b928f0bfbf5b3095f7e849d59b62245b"
+    "bytes": 4839,
+    "sha256": "7912002a21dcac06a21edffc6902124ca715891daa8bb0a880a242a23995d570"
   },
-  "sourceToolSha256": "15c87bbb72ff8f845b2062a496229960f8f9c906aaf647ed236434448153073b",
+  "sourceToolSha256": "74cad5598af02a79230ba6710afc13e348e9397b4e49bf08c1286d6e2b8952d4",
   "omittedFullReferenceBanks": [
     {
       "rows": 8,
       "sha256": "0b81a514a79ea92a75bd7f69e09f61d9447313fd8e07d400bcbe03e74daf1bbd",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

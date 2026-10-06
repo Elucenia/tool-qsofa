@@ -1,0 +1,537 @@
+{
+  "id": "qsofa",
+  "implementationVersion": "qsofa@native-2026-10-05+7912002a21dc",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Só taquipneia: 1 ponto, negativo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA negativo (< 2)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Não exclui sepse: continue reavaliando e calcule o SOFA se houver suspeita de disfunção orgânica.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Taquipneia e hipotensão: 2 pontos, positivo (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA positivo (≥ 2): maior risco de mortalidade hospitalar",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Investigar disfunção orgânica (SOFA), iniciar o pacote de sepse e considerar UTI.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Os três critérios: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA positivo (≥ 2): maior risco de mortalidade hospitalar",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Investigar disfunção orgânica (SOFA), iniciar o pacote de sepse e considerar UTI.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Só taquipneia: 1 ponto, negativo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "negative qSOFA (< 2)",
+            "locale": "en",
+            "template": "documented-authored-055effce67193f0969a4"
+          },
+          "note": {
+            "text": "Does not exclude sepsis: continue reassessing and calculate SOFA if organ dysfunction is suspected.",
+            "locale": "en",
+            "template": "documented-authored-db53a9eab47b8ca6f6bc"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Taquipneia e hipotensão: 2 pontos, positivo (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "positive qSOFA (≥ 2): higher risk of in-hospital mortality",
+            "locale": "en",
+            "template": "documented-authored-d0a1d3d817c5bd64bdc1"
+          },
+          "note": {
+            "text": "Investigate organ dysfunction (SOFA), start the sepsis bundle and consider ICU.",
+            "locale": "en",
+            "template": "documented-authored-35ad68f1e8fa4d30a13f"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Os três critérios: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "positive qSOFA (≥ 2): higher risk of in-hospital mortality",
+            "locale": "en",
+            "template": "documented-authored-d0a1d3d817c5bd64bdc1"
+          },
+          "note": {
+            "text": "Investigate organ dysfunction (SOFA), start the sepsis bundle and consider ICU.",
+            "locale": "en",
+            "template": "documented-authored-35ad68f1e8fa4d30a13f"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Só taquipneia: 1 ponto, negativo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA negativo (< 2)",
+            "locale": "es",
+            "template": "documented-authored-055effce67193f0969a4"
+          },
+          "note": {
+            "text": "No excluye sepsis: continúe reevaluando y calcule el SOFA si se sospecha disfunción orgánica.",
+            "locale": "es",
+            "template": "documented-authored-db53a9eab47b8ca6f6bc"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Taquipneia e hipotensão: 2 pontos, positivo (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA positivo (≥ 2): mayor riesgo de mortalidad hospitalaria",
+            "locale": "es",
+            "template": "documented-authored-d0a1d3d817c5bd64bdc1"
+          },
+          "note": {
+            "text": "Investigar disfunción orgánica (SOFA), iniciar el paquete de sepsis y considerar UCI.",
+            "locale": "es",
+            "template": "documented-authored-35ad68f1e8fa4d30a13f"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Os três critérios: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA positivo (≥ 2): mayor riesgo de mortalidad hospitalaria",
+            "locale": "es",
+            "template": "documented-authored-d0a1d3d817c5bd64bdc1"
+          },
+          "note": {
+            "text": "Investigar disfunción orgánica (SOFA), iniciar el paquete de sepsis y considerar UCI.",
+            "locale": "es",
+            "template": "documented-authored-35ad68f1e8fa4d30a13f"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Só taquipneia: 1 ponto, negativo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA négatif (< 2)",
+            "locale": "fr",
+            "template": "documented-authored-055effce67193f0969a4"
+          },
+          "note": {
+            "text": "N’exclut pas un sepsis : continuez à réévaluer et calculez le SOFA en cas de suspicion de dysfonctionnement d’organe.",
+            "locale": "fr",
+            "template": "documented-authored-db53a9eab47b8ca6f6bc"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Taquipneia e hipotensão: 2 pontos, positivo (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA positif (≥ 2) : risque plus élevé de mortalité intrahospitalière",
+            "locale": "fr",
+            "template": "documented-authored-d0a1d3d817c5bd64bdc1"
+          },
+          "note": {
+            "text": "Rechercher une dysfonction d’organe (SOFA), commencer le bundle sepsis et envisager une réanimation.",
+            "locale": "fr",
+            "template": "documented-authored-35ad68f1e8fa4d30a13f"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Os três critérios: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA positif (≥ 2) : risque plus élevé de mortalité intrahospitalière",
+            "locale": "fr",
+            "template": "documented-authored-d0a1d3d817c5bd64bdc1"
+          },
+          "note": {
+            "text": "Rechercher une dysfonction d’organe (SOFA), commencer le bundle sepsis et envisager une réanimation.",
+            "locale": "fr",
+            "template": "documented-authored-35ad68f1e8fa4d30a13f"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Só taquipneia: 1 ponto, negativo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA negativ (< 2)",
+            "locale": "de",
+            "template": "documented-authored-055effce67193f0969a4"
+          },
+          "note": {
+            "text": "Schließt eine Sepsis nicht aus: weiter reevaluieren und den SOFA berechnen, wenn eine Organfunktionsstörung vermutet wird.",
+            "locale": "de",
+            "template": "documented-authored-db53a9eab47b8ca6f6bc"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Taquipneia e hipotensão: 2 pontos, positivo (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA positiv (≥ 2): höheres Risiko für die Krankenhaussterblichkeit",
+            "locale": "de",
+            "template": "documented-authored-d0a1d3d817c5bd64bdc1"
+          },
+          "note": {
+            "text": "Organfunktionsstörung (SOFA) abklären, das Sepsis-Bundle einleiten und eine Intensivstation erwägen.",
+            "locale": "de",
+            "template": "documented-authored-35ad68f1e8fa4d30a13f"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Os três critérios: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA positiv (≥ 2): höheres Risiko für die Krankenhaussterblichkeit",
+            "locale": "de",
+            "template": "documented-authored-d0a1d3d817c5bd64bdc1"
+          },
+          "note": {
+            "text": "Organfunktionsstörung (SOFA) abklären, das Sepsis-Bundle einleiten und eine Intensivstation erwägen.",
+            "locale": "de",
+            "template": "documented-authored-35ad68f1e8fa4d30a13f"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Só taquipneia: 1 ponto, negativo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA negativo (< 2)",
+            "locale": "it",
+            "template": "documented-authored-055effce67193f0969a4"
+          },
+          "note": {
+            "text": "Non esclude la sepsi: continuare a rivalutare e calcolare il SOFA se si sospetta una disfunzione d’organo.",
+            "locale": "it",
+            "template": "documented-authored-db53a9eab47b8ca6f6bc"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Taquipneia e hipotensão: 2 pontos, positivo (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA positivo (≥ 2): maggiore rischio di mortalità ospedaliera",
+            "locale": "it",
+            "template": "documented-authored-d0a1d3d817c5bd64bdc1"
+          },
+          "note": {
+            "text": "Indagare una disfunzione d’organo (SOFA), avviare il pacchetto sepsi e considerare la terapia intensiva.",
+            "locale": "it",
+            "template": "documented-authored-35ad68f1e8fa4d30a13f"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Os três critérios: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA positivo (≥ 2): maggiore rischio di mortalità ospedaliera",
+            "locale": "it",
+            "template": "documented-authored-d0a1d3d817c5bd64bdc1"
+          },
+          "note": {
+            "text": "Indagare una disfunzione d’organo (SOFA), avviare il pacchetto sepsi e considerare la terapia intensiva.",
+            "locale": "it",
+            "template": "documented-authored-35ad68f1e8fa4d30a13f"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Só taquipneia: 1 ponto, negativo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA سلبي (< 2)",
+            "locale": "ar",
+            "template": "documented-authored-055effce67193f0969a4"
+          },
+          "note": {
+            "text": "لا يستبعد الإنتان: استمر في إعادة التقييم واحسب SOFA إذا كان يُشتبه في وجود اختلال وظيفي عضوي.",
+            "locale": "ar",
+            "template": "documented-authored-db53a9eab47b8ca6f6bc"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Taquipneia e hipotensão: 2 pontos, positivo (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA إيجابي (≥ 2): خطر أعلى للوفاة داخل المستشفى",
+            "locale": "ar",
+            "template": "documented-authored-d0a1d3d817c5bd64bdc1"
+          },
+          "note": {
+            "text": "تحرَّ عن اختلال الوظيفة العضوية (SOFA)، وابدأ حزمة الإنتان وفكّر في العناية المركزة.",
+            "locale": "ar",
+            "template": "documented-authored-35ad68f1e8fa4d30a13f"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Os três critérios: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA إيجابي (≥ 2): خطر أعلى للوفاة داخل المستشفى",
+            "locale": "ar",
+            "template": "documented-authored-d0a1d3d817c5bd64bdc1"
+          },
+          "note": {
+            "text": "تحرَّ عن اختلال الوظيفة العضوية (SOFA)، وابدأ حزمة الإنتان وفكّر في العناية المركزة.",
+            "locale": "ar",
+            "template": "documented-authored-35ad68f1e8fa4d30a13f"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Só taquipneia: 1 ponto, negativo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA阴性（< 2）",
+            "locale": "zh",
+            "template": "documented-authored-055effce67193f0969a4"
+          },
+          "note": {
+            "text": "不能排除脓毒症：请继续重新评估，如怀疑器官功能障碍则计算 SOFA。",
+            "locale": "zh",
+            "template": "documented-authored-db53a9eab47b8ca6f6bc"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Taquipneia e hipotensão: 2 pontos, positivo (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA阳性（≥ 2）：住院死亡风险更高",
+            "locale": "zh",
+            "template": "documented-authored-d0a1d3d817c5bd64bdc1"
+          },
+          "note": {
+            "text": "检查器官功能障碍（SOFA），启动脓毒症集束化治疗并考虑重症监护室。",
+            "locale": "zh",
+            "template": "documented-authored-35ad68f1e8fa4d30a13f"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Os três critérios: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA阳性（≥ 2）：住院死亡风险更高",
+            "locale": "zh",
+            "template": "documented-authored-d0a1d3d817c5bd64bdc1"
+          },
+          "note": {
+            "text": "检查器官功能障碍（SOFA），启动脓毒症集束化治疗并考虑重症监护室。",
+            "locale": "zh",
+            "template": "documented-authored-35ad68f1e8fa4d30a13f"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Só taquipneia: 1 ponto, negativo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA陰性（< 2）",
+            "locale": "ja",
+            "template": "documented-authored-055effce67193f0969a4"
+          },
+          "note": {
+            "text": "敗血症を除外するものではありません。引き続き再評価し、臓器障害が疑われる場合はSOFAを算出してください。",
+            "locale": "ja",
+            "template": "documented-authored-db53a9eab47b8ca6f6bc"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Taquipneia e hipotensão: 2 pontos, positivo (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA陽性（≥ 2）：院内死亡リスクが高い",
+            "locale": "ja",
+            "template": "documented-authored-d0a1d3d817c5bd64bdc1"
+          },
+          "note": {
+            "text": "臓器障害（SOFA）を調べ、敗血症バンドルを開始し、ICUを検討してください。",
+            "locale": "ja",
+            "template": "documented-authored-35ad68f1e8fa4d30a13f"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Os três critérios: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA陽性（≥ 2）：院内死亡リスクが高い",
+            "locale": "ja",
+            "template": "documented-authored-d0a1d3d817c5bd64bdc1"
+          },
+          "note": {
+            "text": "臓器障害（SOFA）を調べ、敗血症バンドルを開始し、ICUを検討してください。",
+            "locale": "ja",
+            "template": "documented-authored-35ad68f1e8fa4d30a13f"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Só taquipneia: 1 ponto, negativo",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA नकारात्मक (< 2)",
+            "locale": "hi",
+            "template": "documented-authored-055effce67193f0969a4"
+          },
+          "note": {
+            "text": "सेप्सिस को बाहर नहीं करता: पुनर्मूल्यांकन जारी रखें और यदि अंग विकृति का संदेह हो तो SOFA की गणना करें।",
+            "locale": "hi",
+            "template": "documented-authored-db53a9eab47b8ca6f6bc"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Taquipneia e hipotensão: 2 pontos, positivo (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA सकारात्मक (≥ 2): अस्पताल में मृत्यु का अधिक जोखिम",
+            "locale": "hi",
+            "template": "documented-authored-d0a1d3d817c5bd64bdc1"
+          },
+          "note": {
+            "text": "अंग विकृति (SOFA) की जांच करें, सेप्सिस बंडल शुरू करें और ICU पर विचार करें।",
+            "locale": "hi",
+            "template": "documented-authored-35ad68f1e8fa4d30a13f"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Os três critérios: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "qSOFA सकारात्मक (≥ 2): अस्पताल में मृत्यु का अधिक जोखिम",
+            "locale": "hi",
+            "template": "documented-authored-d0a1d3d817c5bd64bdc1"
+          },
+          "note": {
+            "text": "अंग विकृति (SOFA) की जांच करें, सेप्सिस बंडल शुरू करें और ICU पर विचार करें।",
+            "locale": "hi",
+            "template": "documented-authored-35ad68f1e8fa4d30a13f"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

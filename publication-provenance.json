@@ -1,336 +1,178 @@
 {
-  "schema": "elucenia-native-current-package-R6-HTTP-linked-r5",
+  "schema": "elucenia-public-native-full-output-presentation-r3",
   "id": "qsofa",
   "repository": "Elucenia/tool-qsofa",
   "remoteBase": {
-    "id": "qsofa",
-    "repository": "Elucenia/tool-qsofa",
     "branch": "main",
-    "commit": "ffe65cb801879d1be08f1c42bfb3478dcc8bc834",
-    "archiveSha256": "2124dbd9e31bb9d1e8c1a5c53ac2417866b1cc46fe0badd892e391a14eadac68",
-    "protectedFiles": [
-      {
-        "path": ".gitattributes",
-        "type": "blob",
-        "mode": "100644",
-        "size": 19,
-        "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
-        "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
-      },
-      {
-        "path": ".github/workflows/ci.yml",
-        "type": "blob",
-        "mode": "100644",
-        "size": 279,
-        "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
-        "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
-      },
-      {
-        "path": ".gitignore",
-        "type": "blob",
-        "mode": "100644",
-        "size": 42,
-        "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
-        "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
-      },
-      {
-        "path": "AUTHORSHIP.md",
-        "type": "blob",
-        "mode": "100644",
-        "size": 3229,
-        "sha": "789340f6300310e4361ec5bac2d3f7eab4cf9a69",
-        "sha256": "03131f4dcd9fada3eb8b2f2bc1f78e8fe71d294885cce913240875c6c192176a"
-      },
-      {
-        "path": "CITATION.cff",
-        "type": "blob",
-        "mode": "100644",
-        "size": 856,
-        "sha": "5edd2bfbe19009092b20004c87acdbe0f4d39416",
-        "sha256": "be141dd18e1b3a0c0094a3dfcf4f527739085f33089b56ece9f483517c6f09b7"
-      },
-      {
-        "path": "CONTRIBUTING.md",
-        "type": "blob",
-        "mode": "100644",
-        "size": 1456,
-        "sha": "3a8dcab4adc691795f2b65dc59921f3d119d44b2",
-        "sha256": "d379aefeb520596c5a34762c151d322a6853bd83c0eb38b90c549887096e5d82"
-      },
-      {
-        "path": "LICENSE",
-        "type": "blob",
-        "mode": "100644",
-        "size": 11358,
-        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
-        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
-      },
-      {
-        "path": "NOTICE",
-        "type": "blob",
-        "mode": "100644",
-        "size": 1586,
-        "sha": "c56e6e8f444adbca832f0567d9cd7def880a0a4f",
-        "sha256": "460f2bbf340c52a23167cac51752fb2684b35d288f45d70f4bd7f227cfede3bd"
-      },
-      {
-        "path": "SECURITY.md",
-        "type": "blob",
-        "mode": "100644",
-        "size": 894,
-        "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
-        "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
-      }
-    ],
-    "receipt": {
-      "file": "reports/review-20261005-completion/native190-protected-remote-baseline-r1.json",
-      "bytes": 6066154,
-      "sha256": "ec8bac70e5a6eed7fb742c319c4e68344eea5713350fa16b9d9bf48e014a9a88"
-    },
-    "remoteCodeExecuted": false,
-    "freshBranchReadRequiredBeforePublication": true
-  },
-  "priorAuthorialStandalone": {
-    "file": "reports/review-20261003/github-publication-candidate-final36-v4.json",
-    "bytes": 6823260,
-    "sha256": "a3c528b12d7b5416fa0e62dda9e5106864bae7ff86710fa765934b5a3069e16c"
+    "commit": "18f4465d4580998969ea8efcbd4dec55046074c2",
+    "tree": "e65cbe1aa540f7758c093dd631295a52757d6cb9"
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/qsofa/calculator.js",
-    "bytes": 4634,
-    "sha256": "70fa4643bb7d0b85321dd133c4943873b928f0bfbf5b3095f7e849d59b62245b"
+    "bytes": 4839,
+    "sha256": "7912002a21dcac06a21edffc6902124ca715891daa8bb0a880a242a23995d570"
   },
-  "browserAdapterIdentical": true,
+  "implementationVersion": "qsofa@native-2026-10-05+7912002a21dc",
   "methodVersion": "q SOFA/Sepsis 3/Seymour 2016:FR≥22/PAS≤100/alteração mental,0–3; sem recomendação rastreioisolado SSC 2021",
-  "implementationVersion": "qsofa@native-2026-10-03+70fa4643bb7d",
-  "locales": [
-    "pt-BR",
-    "en",
-    "es",
-    "fr",
-    "de",
-    "it",
-    "ar",
-    "zh",
-    "ja",
-    "hi"
+  "outputContract": [
+    "main",
+    "label",
+    "raw",
+    "level",
+    "verdict",
+    "rows",
+    "note"
+  ],
+  "sourceBodyChanged": false,
+  "inputsFormulaAndNumericalOutputsUnchanged": true,
+  "protectedRemoteFiles": [
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "460f2bbf340c52a23167cac51752fb2684b35d288f45d70f4bd7f227cfede3bd"
+    },
+    {
+      "path": "AUTHORSHIP.md",
+      "sha256": "03131f4dcd9fada3eb8b2f2bc1f78e8fe71d294885cce913240875c6c192176a"
+    },
+    {
+      "path": "CITATION.cff",
+      "sha256": "be141dd18e1b3a0c0094a3dfcf4f527739085f33089b56ece9f483517c6f09b7"
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "d379aefeb520596c5a34762c151d322a6853bd83c0eb38b90c549887096e5d82"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
+    },
+    {
+      "path": ".gitattributes",
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
+    }
   ],
   "sourceSnapshots": [
     {
       "file": "apps/dashboard/private/localization/pt-BR.json",
-      "bytes": 13601911,
-      "sha256": "347c306e9e588d9bff853ab948f100b2ce00d7adb88efb821e39c2799deb1806"
+      "bytes": 13647982,
+      "sha256": "28ccccd21be582c58448407d589b5171fc58f08424934b92957d5a28f7662c40"
     },
     {
       "file": "apps/dashboard/private/localization/en.json",
-      "bytes": 13681895,
-      "sha256": "e14119d6179a16e4af0998cb86cd7332e72eccae8a8257000b4ea940a5919f2b"
+      "bytes": 14038907,
+      "sha256": "13ae4da010a9f2e0331985d26e10f24542d70dfa9fb57c54c3b1f578f7ff92ba"
     },
     {
       "file": "apps/dashboard/private/localization/es.json",
-      "bytes": 13727824,
-      "sha256": "52dce27b11b7d4bd0b0e599e66e24beb802f99068554f76c34ef81c98d7e164f"
+      "bytes": 14091025,
+      "sha256": "8c11d0aeff23af02cee859b844c6e86dbd36c6ff3aeb94be4d3817b3f252825b"
     },
     {
       "file": "apps/dashboard/private/localization/fr.json",
-      "bytes": 13775177,
-      "sha256": "e4ffcf4c7a5378bb9527a544548c6d8364aa309ea38f567359f8f198eee6c7c9"
+      "bytes": 14146083,
+      "sha256": "bc4e26a1076c62e5d5df6325efa2eba34a236d70a48186f322e68da00f88392f"
     },
     {
       "file": "apps/dashboard/private/localization/de.json",
-      "bytes": 13749397,
-      "sha256": "c92817a3fa8412a4f878061d3ac1c56be6d114aae1c3232c25f79c6ce7d597f4"
+      "bytes": 14118649,
+      "sha256": "9160149ec19832146fe930316792ccdc14fd475231217a6ed772488b9c6f8b99"
     },
     {
       "file": "apps/dashboard/private/localization/it.json",
-      "bytes": 13726317,
-      "sha256": "5c7c142087de8016a75759669a7271a9048d9544b1a1383c626fafa7be0ece39"
+      "bytes": 14090640,
+      "sha256": "c141607f449e0acb33241fa22d5c2012e2034bd3f64e517730944bec61b13061"
     },
     {
       "file": "apps/dashboard/private/localization/ar.json",
-      "bytes": 13962469,
-      "sha256": "c3a3cf978eeac700c01847f49bc4dd12759499a6973fa36733bc290786f9246d"
+      "bytes": 14363325,
+      "sha256": "358b92b7d8bb7a916532f576c44cb8a071330a697456cee8348bec5ee4381dbd"
     },
     {
       "file": "apps/dashboard/private/localization/zh.json",
-      "bytes": 13590420,
-      "sha256": "eb2c7d8d5b980d6d43e44bcc135bcde31565fab0290bf595f84975dec6fb294e"
+      "bytes": 13940069,
+      "sha256": "22daaa39df8a2a3a38a9b873011aeb8498876c6e5500c5932abc9c4a4aace75d"
     },
     {
       "file": "apps/dashboard/private/localization/ja.json",
-      "bytes": 13729894,
-      "sha256": "eb524f45c7e9ce0fc3e951b159c102294d6702a1858a1f43f7e920c69fa1a290"
+      "bytes": 14096534,
+      "sha256": "19f044c36143e536193f98fa1862f0671809f336986ae9d863e0256084151d56"
     },
     {
       "file": "apps/dashboard/private/localization/hi.json",
-      "bytes": 14418664,
-      "sha256": "fe93d7fc31e91ed8c9d3acee80261a2f8ad74b77c86e6e28f9b4cadf5d9f048f"
+      "bytes": 14869561,
+      "sha256": "73670c872df401d81305c7728c9b46e258a12e607f4d1a40d4f7a2e962505fe5"
     }
   ],
-  "referenceBank": {
-    "file": "reports/review-20261003/source-cases-audit.json",
-    "bytes": 885399,
-    "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
-  },
-  "comparisonProgram": {
-    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
-    "bytes": 20735,
-    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa"
-  },
-  "sourceNodeParityPassed": true,
-  "browserVmParityPassed": true,
-  "actualBrowserDomVerified": false,
-  "currentActualR6HttpEvidence": {
-    "path": "evidence/served-http-r6.json",
-    "bytes": 18998,
-    "sha256": "036a1bc6d5a68cca4e4bfef01b7ef5f9977df33be66b9571dd2567d6211c4606",
-    "sourceReceipt": {
-      "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
-      "bytes": 7105396,
-      "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  "pureFormatters": [
+    {
+      "file": "apps/website/src/components/locale-number-format.ts",
+      "bytes": 747,
+      "sha256": "b5b4bd6eaadde5ab191094dafabf73ab594c8bd01fb040c00bb5ecb10167e6c7"
     },
-    "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
-    "sourceCalculator": {
-      "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/qsofa/calculator.js",
-      "sha256": "70fa4643bb7d0b85321dd133c4943873b928f0bfbf5b3095f7e849d59b62245b",
-      "bytes": 4634
+    {
+      "file": "apps/website/src/components/numeric-input.ts",
+      "bytes": 2618,
+      "sha256": "e8259298ea682869cc050ac0ee7b5fdc4ddc9e54aaac1e602975d93fd97b3cb3"
     },
-    "cases": 3,
-    "status": "passed"
-  },
-  "rights": {
-    "ownCodeScope": "Current MIT adapter and original Apache standalone wrapper/support; exact original licences and notices coexist without rewriting",
-    "sourceAdapter": {
-      "file": "apps/website/private/tool-code/qsofa/calculator.js",
-      "bytes": 4634,
-      "sha256": "70fa4643bb7d0b85321dd133c4943873b928f0bfbf5b3095f7e849d59b62245b"
+    {
+      "file": "apps/website/src/components/calculator-result-localization.ts",
+      "bytes": 11039,
+      "sha256": "b41abb33cf924d7a7d5bce4e09fbe115ab1b425c1f855e3962c9b4300b70c749"
     },
-    "currentLegalFiles": [
-      {
-        "file": "apps/command-center/private/tool-code/qsofa/LICENSE",
-        "bytes": 1229,
-        "sha256": "51c010d285894558695812b9883d9c9ae7c9c89526f43597917e778965e65d93"
-      },
-      {
-        "file": "apps/command-center/private/tool-code/qsofa/NOTICE.md",
-        "bytes": 1183,
-        "sha256": "b7d5eaa1074d1673caf885ac49b38e9b54b2c6086b45072eacf7b3fe139d8a6d"
-      }
-    ],
-    "protectedRemoteFiles": [
-      {
-        "path": ".gitattributes",
-        "type": "blob",
-        "mode": "100644",
-        "size": 19,
-        "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
-        "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
-      },
-      {
-        "path": ".github/workflows/ci.yml",
-        "type": "blob",
-        "mode": "100644",
-        "size": 279,
-        "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
-        "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
-      },
-      {
-        "path": ".gitignore",
-        "type": "blob",
-        "mode": "100644",
-        "size": 42,
-        "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
-        "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
-      },
-      {
-        "path": "AUTHORSHIP.md",
-        "type": "blob",
-        "mode": "100644",
-        "size": 3229,
-        "sha": "789340f6300310e4361ec5bac2d3f7eab4cf9a69",
-        "sha256": "03131f4dcd9fada3eb8b2f2bc1f78e8fe71d294885cce913240875c6c192176a"
-      },
-      {
-        "path": "CITATION.cff",
-        "type": "blob",
-        "mode": "100644",
-        "size": 856,
-        "sha": "5edd2bfbe19009092b20004c87acdbe0f4d39416",
-        "sha256": "be141dd18e1b3a0c0094a3dfcf4f527739085f33089b56ece9f483517c6f09b7"
-      },
-      {
-        "path": "CONTRIBUTING.md",
-        "type": "blob",
-        "mode": "100644",
-        "size": 1456,
-        "sha": "3a8dcab4adc691795f2b65dc59921f3d119d44b2",
-        "sha256": "d379aefeb520596c5a34762c151d322a6853bd83c0eb38b90c549887096e5d82"
-      },
-      {
-        "path": "LICENSE",
-        "type": "blob",
-        "mode": "100644",
-        "size": 11358,
-        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
-        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
-      },
-      {
-        "path": "NOTICE",
-        "type": "blob",
-        "mode": "100644",
-        "size": 1586,
-        "sha": "c56e6e8f444adbca832f0567d9cd7def880a0a4f",
-        "sha256": "460f2bbf340c52a23167cac51752fb2684b35d288f45d70f4bd7f227cfede3bd"
-      },
-      {
-        "path": "SECURITY.md",
-        "type": "blob",
-        "mode": "100644",
-        "size": 894,
-        "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
-        "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
-      }
-    ],
-    "sourceMaterialScope": "Published mathematical/Boolean method implemented in ELUCENIA code; source-specific clinical descriptions and questionnaire expression remain separate from code ownership/licensing",
-    "scientificSources": [
-      [
-        "Seymour CW et al. Assessment of clinical criteria for sepsis: for the Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3). JAMA, 2016.",
-        "https://doi.org/10.1001/jama.2016.0288"
-      ],
-      [
-        "Singer M et al. The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3). JAMA, 2016.",
-        "https://doi.org/10.1001/jama.2016.0287"
-      ],
-      [
-        "Evans L et al. Surviving sepsis campaign: international guidelines for management of sepsis and septic shock 2021. Intensive Care Med, 2021.",
-        "https://doi.org/10.1007/s00134-021-06506-y"
-      ],
-      [
-        "SSC adult guidelines2021",
-        "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-guidelines-2021"
-      ],
-      [
-        "SSC adult guidelines2026, current official page as observed2026-10-03",
-        "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines"
-      ]
-    ],
-    "methodVersion": "q SOFA/Sepsis 3/Seymour 2016:FR≥22/PAS≤100/alteração mental,0–3; sem recomendação rastreioisolado SSC 2021",
-    "grantRecordedInNotice": true,
-    "thirdPartyInstrumentRightsApproval": "not-performed",
-    "wholeInstrumentApproval": false,
-    "professionalTranslationApproval": false,
-    "clinicalApproval": false,
-    "remainingScopeReview": "Check source-specific wording, questionnaire/instrument and translation conditions before treating the complete mixed bundle as cleared; no grant is inferred from public accessibility or code licence"
+    {
+      "file": "apps/website/src/components/calculator-locale.ts",
+      "bytes": 15741,
+      "sha256": "e1cf2e3aca4c08cb85f241718fb9fe2a04c0e99ca00877b0ff3ab7d9c92d4967"
+    },
+    {
+      "file": "apps/website/src/components/calculator-result-narratives.ts",
+      "bytes": 4633,
+      "sha256": "596d9ec7d03077529cc691e2048427e45ebbc2534be1932bea5ca37d811b4144"
+    }
+  ],
+  "resultRenderer": [
+    {
+      "file": "apps/website/src/components/DocumentedCalculationResult.tsx",
+      "bytes": 2589,
+      "sha256": "cb12598a9588e2bc1bede6f4180690d899eebedc1dce9df4574f3991e4fd0573"
+    }
+  ],
+  "authorialTemplateData": {
+    "file": "apps/website/translations/tools/native-result-narratives-data.json",
+    "bytes": 1434221,
+    "sha256": "b3c720b298033ea4cb84b4eb2b7132e3c6f2e4f042436c3e1a83b0cb9ae0efb5"
   },
-  "clinicalApproval": false,
-  "professionalLanguageApproval": false,
-  "externalPublicationReady": false,
-  "publicationPerformed": false,
-  "appWrites": false,
-  "deliveryWrites": false,
-  "preparedFrom": {
-    "file": "reports/review-20261005-completion/native187-current-candidates-r2.json",
-    "bytes": 2785936,
-    "sha256": "2fe0448a9680b4a50b34235469d7cb36b3e8075ce0559d700f59442007cfb0f9"
-  }
+  "sourceFreeze": {
+    "file": "reports/review-20261005-completion/native-result-presentation-r1/final-source-freeze-r1/source-freeze.json",
+    "bytes": 833769,
+    "sha256": "5335d52bf94eafbf32b0a499a916e609cefdf357b97247be981796cf14a15d26"
+  },
+  "finalModuleProof": {
+    "file": "reports/review-20261005-completion/native-result-presentation-r1/final-source-integration-r4/final-module-proof-r3.json",
+    "bytes": 13798,
+    "sha256": "231c666a91e4ee92ca5b22c3d6dde4450f0f9f7d186a6a2b60421d67e8ebcaff"
+  },
+  "previousPublicationProvenance": {
+    "path": "evidence/publication-provenance-before-output-contract.json",
+    "sha256": "48358f17a755c9fcbbd4cef0c3f8115c47bcd2174beceb1776eca3c28dd8e2b2"
+  },
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "instrumentRightsApproval": "not-performed",
+  "actualBrowserJourney": "pending representative standalone checks",
+  "servedApiGate": "pending current DEV3073; no production claim",
+  "GitHubWrites": 0,
+  "privateApplicationTreeIncluded": false
 }

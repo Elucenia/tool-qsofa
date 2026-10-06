@@ -71,3 +71,28 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+negative qSOFA (< 2)
+
+Does not exclude sepsis: continue reassessing and calculate SOFA if organ dysfunction is suspected.
+
+
+### 2
+
+positive qSOFA (≥ 2): higher risk of in-hospital mortality
+
+Investigate organ dysfunction (SOFA), start the sepsis bundle and consider ICU.
+
+
+### 3
+
+positive qSOFA (≥ 2): higher risk of in-hospital mortality
+
+Investigate organ dysfunction (SOFA), start the sepsis bundle and consider ICU.
+

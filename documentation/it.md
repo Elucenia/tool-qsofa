@@ -71,3 +71,28 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+qSOFA negativo (< 2)
+
+Non esclude la sepsi: continuare a rivalutare e calcolare il SOFA se si sospetta una disfunzione d’organo.
+
+
+### 2
+
+qSOFA positivo (≥ 2): maggiore rischio di mortalità ospedaliera
+
+Indagare una disfunzione d’organo (SOFA), avviare il pacchetto sepsi e considerare la terapia intensiva.
+
+
+### 3
+
+qSOFA positivo (≥ 2): maggiore rischio di mortalità ospedaliera
+
+Indagare una disfunzione d’organo (SOFA), avviare il pacchetto sepsi e considerare la terapia intensiva.
+

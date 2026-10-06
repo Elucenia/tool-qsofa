@@ -71,3 +71,28 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+qSOFA negativo (< 2)
+
+No excluye sepsis: continúe reevaluando y calcule el SOFA si se sospecha disfunción orgánica.
+
+
+### 2
+
+qSOFA positivo (≥ 2): mayor riesgo de mortalidad hospitalaria
+
+Investigar disfunción orgánica (SOFA), iniciar el paquete de sepsis y considerar UCI.
+
+
+### 3
+
+qSOFA positivo (≥ 2): mayor riesgo de mortalidad hospitalaria
+
+Investigar disfunción orgánica (SOFA), iniciar el paquete de sepsis y considerar UCI.
+
